@@ -13,18 +13,15 @@
 
 .header{
     width: 100%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    float: left;
+    height: 100px;
 }
 
 .menu{
     display: flex;
-    margin-left: 500px;
-    margin-top: 20px;
+    margin-left: 550px;
+    margin-top: -52px;
     margin-right: 50px;
-    z-index: 1;
+    z-index: 999;
 }
 .menu>li>ul>p{
     background-color: #1a1a1a;
@@ -56,21 +53,22 @@
 
 .slide{
     width: 100%;
-    height: 300px;
+    height:300px;
     overflow: hidden;
     position: relative;
+    z-index: -1;
 }
 .slide >img {
     
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 100%;
+    top: 100%;
+    left: 0;
 }
 .slide > img:first-child{
-    left: 0;
-    z-index: -1;
+    top: 0;
+    
 }
 
 .contents{
@@ -83,9 +81,6 @@
     overflow: hidden;
     float: left;
 }
-.notice{
-    padding: 20px 20px 0 0;
-}
 .tab{
     width: 400px;
     height: 50px;
@@ -94,14 +89,14 @@
     float: left;
     height: 50px;
     width: 80px;
-    border: 1px solid #333;
-    background-color: #555;
+    border: 1px solid #000;
+    background-color: #888;
     text-align: center;
     line-height: 50px;
     cursor: pointer;
 }
 .tab .newsTab{
-  background-color: #aaa;
+  background-color: #fff;
   border-bottom: 0;
   
 }
@@ -110,17 +105,16 @@
 }
 
 .news, .gallery{
-    margin-top: -1px;
-    width: 100%;
+    width: 98%;
     height: 130px;
-    border: 1px solid #333;
+    border: 1px solid #000;
     padding-left: 5px;
 }
 .news ul li{
     float: left;
     height: 30px;
     line-height: 30px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #000;
 }
 .news ul li:first-child{
     width: 260px;
@@ -136,4 +130,81 @@
 }
 .gallery img{
     margin: 15px 9px 0 9px;
+    border-bottom: 0;
+}
+#popup{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    border: 1px solid #333;
+    top: 30%;
+    left: 40%;
+    background-color: white;
+}
+#popup > p:last-child{
+    position: absolute;
+    top:80%;
+    left:75%;
+}
+#popup > p > button{
+    width: 80px;
+    height: 30px;
+}
+.banner{
+    width: 100%;
+    margin-top: 30px;
+}
+.banner img{
+    margin: 20px 15px 0 15px;
+}
+.sponser{
+    padding-top: 20px;
+}
+
+.sponser p{
+    display: block;
+    width: 90%;
+    height: 40px;
+    background-color: #74c7f3;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.last-logo{
+    width: 200px;
+}
+.copy{
+    width: 800px;
+    text-align: center;
+}
+.sns{
+    width: 200px;
+    display: flex;
+}
+.sns a{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+}
+.facebook{
+    background-color: #274dcc;
+    border-radius: 100px;
+}
+.instar{
+    background-color: rgb(180, 164, 226);
+    border-radius: 100px;
+}
+.twitter{
+    background-color: rgb(101, 206, 255);
+    border-radius: 100px;
 }
